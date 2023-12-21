@@ -20,5 +20,8 @@ spec:
       containers:
       - image: kolyazuk/postgres:latest
         name: nginx
+        env:
+          - name: POSTGRES_PASSWORD
+            value: qwerty123
         resources: {}
 status: {}
